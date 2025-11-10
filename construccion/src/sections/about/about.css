@@ -1,0 +1,45 @@
+.cent-About {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0px 50px 0px;
+}
+
+.cent-About img {
+  height: 482px;
+  width: 418px;
+  margin-left: 60px;
+  box-shadow: -60px -26px #CBA342;
+}
+
+.text-about {
+  width: 50%;
+}
+
+.text-about h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  font-style: normal;
+  margin: 0px;
+}
+
+.text-about p {
+  font-family: "inter";
+}
+
+@media(max-width:832px){
+  .cent-About img{
+    display: none;
+  }
+  .text-about{
+    width: 100%;
+  }
+}

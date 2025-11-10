@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.color-text {
+  color: #cba342;
+}
+.color-text-white {
+  color: rgb(255, 255, 255);
+}
+.color-text-black {
+  color: black;
+}
+.color-text-black:hover {
+  color: #ffd87e;
+}
+.color-background {
+  background-color: #cba342;
+}
+
+.color-background-white {
+  background-color: white;
+}
+
+.font-bebas {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  font-style: normal;
+}
+
+.btn-Color {
+  background-color: #cba342;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 180px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn-Color:hover {
+  background-color: #ffd87e;
+}
+.btn-Border {
+  background-color: none;
+  color: #cba342;
+  border: 1px solid #cba342;
+  height: 40px;
+  width: 200px;
+
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn-Border:hover {
+  color: #ffd87e;
+  border: 1px solid #ffd87e;
+}
