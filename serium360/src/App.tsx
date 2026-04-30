@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename="/page/">
       <Routes>
         <Route path="/" element={<MainPage/>}/>
           <Route path='/hse' element={<HSE/>}/>

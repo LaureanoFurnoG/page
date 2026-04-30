@@ -1,6 +1,8 @@
+import { useNavigate } from 'react-router-dom';
 import './services.css'
 
 function Services() {
+  const navigate = useNavigate();
   return (
     <>
       <section id='services-main'>
@@ -17,7 +19,7 @@ function Services() {
               mejora del rendimiento de los activos, adaptándonos a las necesidades específicas de
               cada operación.
             </p>
-            <button className='service-panel__btn' onClick={() => location.href = '/hse'}>VER MAS</button>
+            <button className='service-panel__btn' onClick={() => { navigate('/hse'); window.scrollTo({ top: 0, behavior: 'instant' });} }>VER MAS</button>
           </div>
         </div>
 
@@ -32,7 +34,7 @@ function Services() {
               capacitación del personal, promoviendo entornos de trabajo seguros y sostenibles
               alineados con las mejores prácticas de la industria.
             </p>
-            <button className='service-panel__btn' onClick={() => location.href = '/mro'}>VER MAS</button>
+            <button className='service-panel__btn' onClick={() => { navigate('/mro'); window.scrollTo({ top: 0, behavior: 'instant' });}}>VER MAS</button>
           </div>
         </div>
       </section>
