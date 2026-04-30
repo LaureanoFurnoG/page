@@ -1,0 +1,12 @@
+#contactMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../assets/contact/imgFondo-cont.png");
+}
+
+#contactMain footer{
+  background-color: #39C15C;
+  border-color: #0091b1;
+}

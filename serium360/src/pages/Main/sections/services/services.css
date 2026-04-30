@@ -1,0 +1,100 @@
+#services-main {
+  display: flex;
+  width: 100%;
+  min-height: 933px;
+}
+
+.service-panel {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.HSE_service {
+  background-image: url("../../assets/services-images/HSE.png");
+}
+
+.MRO_service {
+  background-image: url("../../assets/services-images/MRO.png");
+}
+
+.service-panel__overlay {
+  position: absolute;
+  inset: 0;
+  transition: background 0.3s ease;
+}
+
+.service-panel:hover .service-panel__overlay {
+  background: rgba(40, 180, 120, 0.6);
+}
+
+.MRO_service:hover .service-panel__overlay {
+  background: rgba(20, 160, 180, 0.6);
+}
+
+.service-panel__content {
+  position: relative;
+  z-index: 1;
+  padding: 48px 10%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  min-height: 500px;
+}
+
+.service-panel__content h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+  letter-spacing: 0.01em;
+}
+
+.service-panel__content p {
+  font-size: 0.92rem;
+  color: #ffffff;
+  line-height: 1.7;
+  margin: 0 0 auto 0;
+  font-weight: 500;
+}
+
+.service-panel__btn {
+  margin-top: 48px;
+  align-self: flex-start;
+  background: #1a7abf;
+  color: #ffffff;
+  border: none;
+  padding: 14px 10%;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease;
+}
+
+.MRO_service .service-panel__btn {
+  background: #2db87a;
+}
+
+.service-panel__btn:hover {
+  background: #155f96;
+  transform: translateY(-1px);
+}
+
+.MRO_service .service-panel__btn:hover {
+  background: #23996a;
+}
+
+@media (max-width: 768px) {
+  #services-main {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,57 @@
+.cent-About {
+  width: 85%;
+  display: flex;
+  gap:30px;
+  justify-content: space-between;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0px 50px 0px;
+}
+
+.about-image {
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 518px;
+  border-radius: 8px;
+  margin-left: 60px;
+  box-shadow: -60px -26px #39C15C;
+}
+
+.text-about {
+  width: 50%;
+}
+
+.text-about h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  font-style: normal;
+  margin: 0px;
+}
+
+.text-about p {
+  font-family: "inter";
+}
+.m-v-v{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+@media(max-width:1148px){
+  .cent-About{
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+  .about-image{
+    max-width: 100% !important;
+    max-height: 400px ;
+  }
+  .text-about{
+    width: 100%;
+  }
+}

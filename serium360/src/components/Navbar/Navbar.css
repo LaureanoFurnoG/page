@@ -1,0 +1,59 @@
+ul {
+    list-style: none;
+}
+
+.contBanNav p {
+    font-family: 'Khand';
+    font-weight: 600;
+    font-size: 16px;
+    margin: 5px;
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    background-color: white;
+}
+
+#barraVerde {
+    background-color: rgba(17, 170, 55, 0.85);
+    box-shadow: 10px 4px 5px rgba(0, 0, 0, 0.253);
+}
+.ant-dropdown-trigger *{
+    cursor: pointer !important;
+}
+nav,
+#barraVerde {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.cajaMenu {
+    width: 100%;
+    position: fixed;
+    z-index: 30;
+}
+
+.contBanNav {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contBanNav img {
+    height: 50px;
+    width: 50px;
+    position: relative !important;
+    z-index: 9999 !important;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}

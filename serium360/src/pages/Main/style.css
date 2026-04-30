@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.color-text {
+  color: #39C15C;
+}
+.color-text-2 {
+  color: #0091B1;
+}
+.color-text-white {
+  color: rgb(255, 255, 255);
+}
+.color-text-black {
+  color: black;
+}
+.color-text-black:hover {
+  color: #39C15C;
+}
+.color-background {
+  background-color: #39C15C;
+}
+
+.color-background-white {
+  background-color: white;
+}
+
+.font-bebas {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  font-style: normal;
+}
+
+.btn-Color {
+  background-color: #39C15C;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 180px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn-Color:hover {
+  background-color: #39C15C;
+}
+.btn-Border {
+  background-color: none;
+  color: #39C15C;
+  border: 1px solid #39C15C;
+  height: 40px;
+  width: 200px;
+
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn-Border:hover {
+  color: #39C15C;
+  border: 1px solid #39C15C;
+}
+
