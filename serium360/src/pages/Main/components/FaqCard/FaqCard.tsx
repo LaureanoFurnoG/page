@@ -4,13 +4,15 @@ import './FaqCard.css';
 type Props = {
   question: string;
   answer: string;
+  timeAOS: number;
+  side: string;
 }
 
-const FaqCard: React.FC<Props> = ({ question, answer }) => {
+const FaqCard: React.FC<Props> = ({ question, answer, timeAOS, side }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className={`faq-card ${open ? 'faq-card--open' : ''}`} onClick={() => setOpen(!open)}>
+    <div data-aos={`fade-${side}`} data-aos-duration={timeAOS} className={`faq-card ${open ? 'faq-card--open' : ''}`} onClick={() => setOpen(!open)}>
       <div className='faq-card__header'>
         <div className='faq-card__icon'>?</div>
         <span className='faq-card__question'>{question}</span>

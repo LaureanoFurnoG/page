@@ -11,7 +11,7 @@ const PreguntasFrecuentes: React.FC = () => {
         <div className="pregContainer">
 
           <div className="container1">
-            <div className="PR">
+            <div data-aos="fade-right" data-aos-duration="1000" className="PR">
               <img src={pregIcon} alt="" />
               <div>
                 <p className="pregunta">¿Qué servicios ofrece Serium 360 HSE Consulting?</p>
@@ -22,7 +22,7 @@ const PreguntasFrecuentes: React.FC = () => {
                 </p>
               </div>
             </div>
-            <div className="PR">
+            <div data-aos="fade-right" data-aos-duration="1500" className="PR">
               <img src={pregIcon} alt="" />
               <div>
                 <p className="pregunta">¿Trabajan con empresas de cualquier tamaño?</p>
@@ -31,7 +31,7 @@ const PreguntasFrecuentes: React.FC = () => {
                 </p>
               </div>
             </div>
-            <div className="PR">
+            <div data-aos="fade-right" data-aos-duration="2000" className="PR">
               <img src={pregIcon} alt="" />
               <div>
                 <p className="pregunta">¿Por qué es importante cumplir con la normativa en seguridad e higiene?</p>
@@ -40,7 +40,7 @@ const PreguntasFrecuentes: React.FC = () => {
                 </p>
               </div>
             </div>
-            <div className="PR">
+            <div data-aos="fade-right" data-aos-duration="2500" className="PR">
               <img src={pregIcon} alt="" />
               <div>
                 <p className="pregunta">¿Qué normativas cumplen los estudios y mediciones que realizan?</p>
@@ -51,8 +51,8 @@ const PreguntasFrecuentes: React.FC = () => {
             </div>
           </div>
 
-          <div className="container2">
-            <div className="PR">
+          <div data-aos="fade-left" className="container2">
+            <div data-aos="fade-left" data-aos-duration="1000" className="PR">
               <img src={pregIcon} alt="" />
               <div>
                 <p className="pregunta">¿En qué zonas brindan sus servicios?</p>
@@ -61,7 +61,7 @@ const PreguntasFrecuentes: React.FC = () => {
                 </p>
               </div>
             </div>
-            <div className="PR">
+            <div data-aos="fade-left" data-aos-duration="1500" className="PR">
               <img src={pregIcon} alt="" />
               <div>
                 <p className="pregunta">¿Cómo se realizan las mediciones de impacto acústico, iluminación o carga térmica?</p>
@@ -70,7 +70,7 @@ const PreguntasFrecuentes: React.FC = () => {
                 </p>
               </div>
             </div>
-            <div className="PR">
+            <div data-aos="fade-left" data-aos-duration="2000" className="PR">
               <img src={pregIcon} alt="" />
               <div>
                 <p className="pregunta">¿Ofrecen capacitaciones para empresas?</p>
@@ -79,7 +79,7 @@ const PreguntasFrecuentes: React.FC = () => {
                 </p>
               </div>
             </div>
-            <div className="PR">
+            <div data-aos="fade-left" data-aos-duration="2500" className="PR">
               <img src={pregIcon} alt="" />
               <div>
                 <p className="pregunta">¿Cómo puedo solicitar un servicio o presupuesto?</p>

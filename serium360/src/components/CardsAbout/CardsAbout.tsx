@@ -5,11 +5,12 @@ type Props = {
   title: string;
   icon: string;
   text: string;
+  timeAOS: number;
 }
 
-const CardsAbout: React.FC<Props> = ({ title, icon, text }) => {
+const CardsAbout: React.FC<Props> = ({ title, icon, text, timeAOS }) => {
   return (
-    <div className="info-card">
+    <div data-aos="fade-left" data-aos-duration={timeAOS} className="info-card">
       <div className="info-card__accent" />
       <div className="info-card__icon-wrapper">
         <img src={icon} alt={title} className="info-card__icon" />

@@ -9,8 +9,8 @@ function Services() {
         <div className='HSE_service service-panel'>
           <div className='service-panel__overlay' />
           <div className='service-panel__content'>
-            <h2>Serium360 HSE</h2>
-            <p>
+            <h2 data-aos="fade-right">Serium360 HSE</h2>
+            <p data-aos="fade-right">
               Ofrecemos servicios integrales de mantenimiento, reparación y optimización de equipos
               e infraestructura, abarcando desde la reparación de unidades industriales hasta el
               mantenimiento de sistemas de climatización y equipos de energía renovable. Nuestro
@@ -26,8 +26,8 @@ function Services() {
         <div className='MRO_service service-panel'>
           <div className='service-panel__overlay' />
           <div className='service-panel__content'>
-            <h2>Serium360 MRO</h2>
-            <p>
+            <h2 data-aos="fade-left">Serium360 MRO</h2>
+            <p data-aos="fade-left">
               Brindamos soluciones completas en seguridad, salud ocupacional y gestión ambiental,
               orientadas a la identificación, evaluación y mitigación de riesgos. Implementamos
               programas de control ambiental, manejo de residuos, cumplimiento normativo y

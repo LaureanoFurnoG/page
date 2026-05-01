@@ -16,6 +16,7 @@
 body {
     background-color: rgb(255, 255, 255);
     margin: 0px;
+    overflow-x: hidden !important;
 }
 html{
     scroll-behavior: smooth;
@@ -558,6 +559,7 @@ i {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-attachment: fixed;
     background-image: url('./assets/images/imgFondo-cont.png');
 }
 

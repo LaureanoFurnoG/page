@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-// Protocolos
 import CargaT       from '../../assets/images/servicios/protocolos/CargaT.webp';
 import Vibraciones  from '../../assets/images/servicios/protocolos/Vibraciones.webp';
 import CargaFuego   from '../../assets/images/servicios/protocolos/CargaFuego.webp';
@@ -8,30 +7,25 @@ import Ergonomia    from '../../assets/images/servicios/protocolos/ergonomia.web
 import Iluminacion  from '../../assets/images/servicios/protocolos/iluminacion.webp';
 import Contaminantes from '../../assets/images/servicios/protocolos/contaminantes.webp';
 
-// Consultoria
 import Planes       from '../../assets/images/servicios/consultoria/planes.webp';
 import Eval         from '../../assets/images/servicios/consultoria/eval.webp';
 import Asesoramiento from '../../assets/images/servicios/consultoria/asesoramiento.webp';
 
-// Gestión ambiental
 import Impacto      from '../../assets/images/servicios/gestionamb/impacto.webp';
 import Sistemas     from '../../assets/images/servicios/gestionamb/sistemas.webp';
 import Residuos     from '../../assets/images/servicios/gestionamb/residuos.webp';
 import Emisiones    from '../../assets/images/servicios/gestionamb/emisiones.webp';
 
-// Capacitaciones / cursos
 import Altura       from '../../assets/images/servicios/cursos/altura.webp';
 import Quimicos     from '../../assets/images/servicios/cursos/quimicos.webp';
 import Brigada      from '../../assets/images/servicios/cursos/brigada.webp';
 import Autoelevador from '../../assets/images/servicios/cursos/autoelevador.webp';
 
-// Imagen lateral
 import Woman        from '../../assets/images/woman.webp';
 
 type TabId = 'protocolos' | 'consultorias' | 'gestionAmb' | 'capacitaciones';
 
 const Servicios: React.FC = () => {
-  // En el HTML original "protocolos" tiene class="active" por defecto
   const [activeTab, setActiveTab] = useState<TabId>('protocolos');
 
   return (
@@ -72,7 +66,6 @@ const Servicios: React.FC = () => {
           </ul>
         </nav>
 
-        {/* ── PROTOCOLOS ── */}
         <div
           id="protocolos"
           className={`contServicios-cards${activeTab === 'protocolos' ? ' active-cards' : ''}`}
@@ -121,7 +114,6 @@ const Servicios: React.FC = () => {
           </div>
         </div>
 
-        {/* ── CONSULTORIAS ── */}
         <div
           id="consultorias"
           className={`contServicios-cards${activeTab === 'consultorias' ? ' active-cards' : ''}`}
@@ -149,7 +141,6 @@ const Servicios: React.FC = () => {
           </div>
         </div>
 
-        {/* ── GESTIÓN AMBIENTAL ── */}
         <div
           id="gestionAmb"
           className={`contServicios-cards${activeTab === 'gestionAmb' ? ' active-cards' : ''}`}
@@ -184,7 +175,6 @@ const Servicios: React.FC = () => {
           </div>
         </div>
 
-        {/* ── CAPACITACIONES ── */}
         <div
           id="capacitaciones"
           className={`contServicios-cards${activeTab === 'capacitaciones' ? ' active-cards' : ''}`}
@@ -220,8 +210,7 @@ const Servicios: React.FC = () => {
         </div>
       </div>
 
-      {/* Imagen lateral — se oculta con CSS en pantallas < 1180px */}
-      <div className="imgCont">
+      <div data-aos="fade-left" className="imgCont">
         <img className="img-W" src={Woman} alt="" />
       </div>
     </div>

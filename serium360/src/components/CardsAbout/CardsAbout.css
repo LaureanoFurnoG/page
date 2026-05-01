@@ -5,7 +5,7 @@
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  padding: 18px 12px;
+  padding: 10px 10px;
   position: relative;
   overflow: hidden;
   border-left: 7px solid #3dba6f;
@@ -35,7 +35,7 @@
 
 .info-card__title {
   font-family: 'Georgia', serif;
-  font-size: 1.5rem;
+  font-size: 28px !important;
   font-weight: 700;
   color: #1a1a1a;
   margin: 0;

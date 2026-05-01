@@ -5,7 +5,7 @@ const Banner: React.FC = () => {
     <div id="ban" className="banner">
       <div className="blueRay">
         <div className="centa">
-          <div className="textContBanner">
+          <div data-aos="fade-right" className="textContBanner">
             <h1>HIGIENE, <span>SEGURIDAD</span> Y MEDIOAMBIENTE</h1>
             <p>
               Cumpliendo normativas, garantizando seguridad y protegiendo el medioambiente con

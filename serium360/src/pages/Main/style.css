@@ -5,10 +5,10 @@ html {
   scroll-behavior: smooth;
 }
 .color-text {
-  color: #39C15C;
+  color: #39c15c;
 }
 .color-text-2 {
-  color: #0091B1;
+  color: #0091b1;
 }
 .color-text-white {
   color: rgb(255, 255, 255);
@@ -17,16 +17,18 @@ html {
   color: black;
 }
 .color-text-black:hover {
-  color: #39C15C;
+  color: #39c15c;
 }
 .color-background {
-  background-color: #39C15C;
+  background-color: #39c15c;
 }
 
 .color-background-white {
   background-color: white;
 }
-
+#servicesMain, #faqsMain, #contactMain {
+  scroll-margin-top: 85px;
+}
 .font-bebas {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
@@ -35,7 +37,7 @@ html {
 }
 
 .btn-Color {
-  background-color: #39C15C;
+  background-color: #39c15c;
   color: white;
   border: none;
   height: 40px;
@@ -44,12 +46,12 @@ html {
   transition: all 0.5s;
 }
 .btn-Color:hover {
-  background-color: #39C15C;
+  background-color: #39c15c;
 }
 .btn-Border {
   background-color: none;
-  color: #39C15C;
-  border: 1px solid #39C15C;
+  color: #39c15c;
+  border: 1px solid #39c15c;
   height: 40px;
   width: 200px;
 
@@ -57,7 +59,6 @@ html {
   transition: all 0.5s;
 }
 .btn-Border:hover {
-  color: #39C15C;
-  border: 1px solid #39C15C;
+  color: #39c15c;
+  border: 1px solid #39c15c;
 }
-

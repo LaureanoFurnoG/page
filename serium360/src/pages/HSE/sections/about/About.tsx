@@ -5,8 +5,8 @@ const About: React.FC = () => {
   return (
     <>
       <div className="about-us">
-        <img src={aboutImg} alt="" />
-        <div className="cajaText">
+        <img data-aos="fade-right" src={aboutImg} alt="" />
+        <div data-aos="fade-left" className="cajaText">
           <h2>¿QUIENES <span>SOMOS</span>?</h2>
           <p>
             En Serium 360 HSE Consulting, nos especializamos en ofrecer soluciones integrales en higiene,

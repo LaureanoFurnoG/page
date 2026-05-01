@@ -16,15 +16,41 @@ const Navbar: React.FC<Props> = ({about, faqs, services, contact}) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const closeMenu = () => setMenuOpen(false);
   const navigate = useNavigate();
+  const [dropdownOpenDesktop, setDropdownOpenDesktop] = useState(false);
+  const [dropdownOpenMobile, setDropdownOpenMobile] = useState(false);
+  const [, setMobileServiceClickCount] = useState(0);
+  const actualService = services === "#servicesHSE" ? "HSE" : services === "#servicesMRO" ? "MRO" : "";
 
   const navigateToSection = (path: string) => {
     navigate(path);
     window.scrollTo({ top: 0, behavior: 'instant' });
   };
 
-  const onClick: MenuProps['onClick'] = ({ key }) => {
+  const onClickDesktop: MenuProps['onClick'] = ({ key }) => {
+    setDropdownOpenDesktop(false);
     if (key === "2") navigateToSection("/hse");
     if (key === "1") navigateToSection("/mro");
+  };
+
+  const onClickMobile: MenuProps['onClick'] = ({ key }) => {
+    setDropdownOpenMobile(false);
+    setMobileServiceClickCount(0);
+    closeMenu();
+    if (key === "2") navigateToSection("/hse");
+    if (key === "1") navigateToSection("/mro");
+  };
+
+  const handleMobileServiceClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (!dropdownOpenMobile) {
+      setDropdownOpenMobile(true);
+      setMobileServiceClickCount(1);
+    } else {
+      setDropdownOpenMobile(false);
+      setMobileServiceClickCount(0);
+      closeMenu();
+      window.location.href = services;
+    }
   };
 
   const items: MenuProps['items'] = [
@@ -45,8 +71,17 @@ const Navbar: React.FC<Props> = ({about, faqs, services, contact}) => {
           <ul className="lista">
             <li><a href={about}>NOSOTROS</a></li>
             <li>
-              <Dropdown className='licursor' menu={{ items, onClick }}>
-                <a onClick={(e) => { e.preventDefault(); window.location.href = services; }}>
+              <Dropdown
+                className='licursor'
+                menu={{ items, onClick: onClickDesktop }}
+                open={dropdownOpenDesktop}
+                onOpenChange={(flag) => setDropdownOpenDesktop(flag)}
+              >
+                <a onClick={(e) => {
+                  e.preventDefault();
+                  setDropdownOpenDesktop(false);
+                  window.location.href = services;
+                }}>
                   <Space>SERVICIOS</Space>
                 </a>
               </Dropdown>
@@ -67,9 +102,22 @@ const Navbar: React.FC<Props> = ({about, faqs, services, contact}) => {
             <ul id="ulREP" className={menuOpen ? '' : 'sacarMenuRep'}>
               <li><a href={about} onClick={closeMenu}>NOSOTROS</a></li>
               <li>
-                <Dropdown className='licursor' menu={{ items, onClick }}>
-                  <a onClick={(e) => e.preventDefault()}>
-                    <Space>SERVICIOS</Space>
+                <Dropdown
+                  className='licursor'
+                  menu={{ items, onClick: onClickMobile }}
+                  open={dropdownOpenMobile}
+                  onOpenChange={(flag) => {
+                    if (!flag) {
+                      setDropdownOpenMobile(false);
+                      setMobileServiceClickCount(0);
+                    }
+                  }}
+                  trigger={['click']}
+                >
+                  <a onClick={handleMobileServiceClick}>
+                    <Space>
+                      SERVICIOS {dropdownOpenMobile ? `(Doble click ${actualService})` : ''}
+                    </Space>
                   </a>
                 </Dropdown>
               </li>
