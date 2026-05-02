@@ -40,13 +40,14 @@ html {
   background-color: #39c15c;
   color: white;
   border: none;
+  border-radius: 10px;
   height: 40px;
   width: 180px;
   cursor: pointer;
   transition: all 0.5s;
 }
 .btn-Color:hover {
-  background-color: #39c15c;
+  background-color: #309649;
 }
 .btn-Border {
   background-color: none;

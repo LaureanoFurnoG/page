@@ -7,11 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <title>serium360</title>
+  <link rel="shortcut icon" href="./src/assets/logo.webp" type="image/x-icon">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script>
-    const redirect = new URLSearchParams(window.location.search).get('redirect');
+    const redirect = sessionStorage.getItem('redirect');
     if (redirect) {
-      window.history.replaceState(null, '', '/page' + redirect);
+      sessionStorage.removeItem('redirect');
+      window.history.replaceState(null, '', redirect);
     }
   </script>
 </head>

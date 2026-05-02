@@ -1,59 +1,237 @@
-ul {
-    list-style: none;
+@font-face {
+  font-family: "Khand";
+  src: url("./assets/fonts/Khand-Regular.ttf");
+}
+
+.lista li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Khand";
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0px;
 }
 
 .contBanNav p {
-    font-family: 'Khand';
-    font-weight: 600;
-    font-size: 16px;
-    margin: 5px;
+  font-family: "Khand";
+  font-weight: 600;
+  font-size: 16px;
+  margin: 5px;
 }
 
 header {
-    width: 100%;
+  width: 100%;
 }
 
 nav {
-    background-color: white;
+  background-color: white;
 }
 
 #barraVerde {
-    background-color: rgba(17, 170, 55, 0.85);
-    box-shadow: 10px 4px 5px rgba(0, 0, 0, 0.253);
+  background-color: rgba(17, 170, 55, 0.85);
+  box-shadow: 10px 4px 5px rgba(0, 0, 0, 0.253);
+}
+
+.contBanNav img{
+    cursor: pointer;
+}
+
+nav,
+#barraVerde {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.cajaMenu {
+  width: 100%;
+  position: fixed;
+  z-index: 30;
+}
+
+.contBanNav {
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+}
+
+.contIzq {
+  width: 500px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.contIzq p {
+  color: white;
+}
+
+i {
+  margin: 0;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
+i:hover {
+  color: black;
+}
+
+.contIzq,
+.contIzq div {
+  display: flex;
+  align-items: center;
+}
+
+.lista a:hover {
+  color: rgba(17, 170, 55, 0.85);
+}
+
+.conCont {
+  border: 1px solid rgba(17, 170, 55, 0.85);
+  padding: 10px;
+  border-radius: 10px;
+  padding-left: 30px;
+  transition: all 0.5s;
+  padding-right: 30px;
+  color: rgba(17, 170, 55, 0.85) !important;
 }
 .ant-dropdown-trigger *{
     cursor: pointer !important;
 }
-nav,
-#barraVerde {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+.conCont:hover {
+  background-color: rgba(17, 170, 55, 0.85);
+  color: white !important;
 }
 
-.cajaMenu {
-    width: 100%;
-    position: fixed;
-    z-index: 30;
+.iconosDer {
+  display: flex;
+  width: 100px;
+  margin: 5px;
+  justify-content: space-between;
 }
 
-.contBanNav {
-    display: flex;
-    width: 85%;
-    justify-content: space-between;
-    align-items: center;
+.cajaMenuRep {
+  display: none;
 }
 
-.contBanNav img {
-    height: 50px;
-    width: 50px;
-    position: relative !important;
-    z-index: 9999 !important;
+/* Media queries */
+@media (max-width: 783px) {
+  .lista {
+    display: none;
+  }
+
+  .cajaMenuRep {
+    display: block;
+  }
+
+  .BarraN {
+    display: none;
+  }
+
+  .checkbtnRep {
+    color: black !important;
+    float: right;
+    line-height: 80px;
+    margin-right: 5%;
     cursor: pointer;
+  }
+
+  li {
+    opacity: 100%;
+  }
+
+  .logoRep {
+    width: 70px;
+    height: 70px;
+    margin-left: 20%;
+  }
+
+  #ulREP {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background-color: rgba(17, 170, 55, 0.85);
+    margin: 0;
+    padding: 0;
+    top: 89px;
+    z-index: 999;
+    margin-top: 0;
+    justify-content: start;
+    margin-left: 0;
+    margin-right: 0%;
+    left: -100%;
+    text-align: center;
+    transition: all 1.7s;
+    right: -100%;
+  }
+
+  #abrir {
+    font-size: 25px;
+    color: black;
+  }
+
+  .cajaMenuRep {
+    z-index: 999;
+    background: none;
+    display: flex;
+    position: fixed;
+    justify-content: end;
+    align-items: center;
+    height: 80px;
+    width: 85%;
+  }
+
+  .cajaMenuRep ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  .cajaMenuRep ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: "Khand";
+    font-weight: 900;
+  }
+
+  .cajaMenuRep ul li a:hover {
+    color: rgba(0, 139, 169, 1);
+  }
+
+  li a:hover,
+  li a.active {
+    background: none;
+    color: black;
+  }
+
+  #checkMenRep {
+    display: none;
+  }
+
+  #checkMenRep:checked ~ #ulREP {
+    left: 0;
+  }
+
+  .sacarMenuRep {
+    left: -100% !important;
+  }
 }
 
-nav ul {
-    display: flex;
-    width: 600px;
-    justify-content: space-between;
+@media (max-width: 500px) {
+  .contIzq p {
+    display: none;
+  }
+
+  .contIzq {
+    width: 70px;
+  }
 }

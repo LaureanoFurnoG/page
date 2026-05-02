@@ -1,0 +1,76 @@
+/* about */
+#aboutMRO {
+  display: flex;
+  justify-content: center;
+  scroll-margin-top: 100px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-usMRO {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-usMRO h2 {
+  font-family: "Khand";
+  font-weight: bolder;
+  font-size: 38px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.about-usMRO p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-usMRO button {
+  height: 50px;
+  width: 198px;
+  background: none;
+  border: 1px solid rgba(17, 170, 55, 0.85);
+  padding: 10px;
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  color: rgba(17, 170, 55, 0.85);
+  transition: all 0.5s;
+}
+
+.about-usMRO button:hover {
+  background-color: rgba(17, 170, 55, 0.85);
+  color: white;
+}
+
+.about-usMRO h2 span {
+  color: rgba(17, 170, 55, 0.85);
+}
+
+.cajaText {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-usMRO img {
+  width: 35%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .about-usMRO {
+    flex-direction: column-reverse;
+  }
+  .cajaText,
+  .about-usMRO img {
+    width: 100%;
+  }
+}

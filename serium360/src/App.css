@@ -1,3 +1,8 @@
 p {
   font-family: "inter", sans-serif !important;
 }
+
+
+body, html {
+  overflow-x: hidden !important;
+}

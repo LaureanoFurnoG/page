@@ -1,949 +1,729 @@
 @font-face {
-    font-family: 'Khand';
-    src: url('./assets/fonts/Khand-Regular.ttf');
-}
-
-
-.lista li a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Khand';
-    font-weight: 600;
-    font-size: 18px;
-    margin: 0px;
+  font-family: "Khand";
+  src: url("./assets/fonts/Khand-Regular.ttf");
 }
 
 body {
-    background-color: rgb(255, 255, 255);
-    margin: 0px;
-    overflow-x: hidden !important;
+  background-color: rgb(255, 255, 255);
+  margin: 0px;
+  overflow-x: hidden !important;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 ul {
-    list-style: none;
-}
-
-.contBanNav p {
-    font-family: 'Khand';
-    font-weight: 600;
-    font-size: 16px;
-    margin: 5px;
-}
-
-header {
-    width: 100%;
-}
-
-nav {
-    background-color: white;
-}
-
-#barraVerde {
-    background-color: rgba(17, 170, 55, 0.85);
-    box-shadow: 10px 4px 5px rgba(0, 0, 0, 0.253);
-}
-
-nav,
-#barraVerde {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.cajaMenu {
-    width: 100%;
-    position: fixed;
-    z-index: 30;
-}
-
-.contBanNav {
-    display: flex;
-    width: 85%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    display: flex;
-    width: 600px;
-    justify-content: space-between;
-}
-
-.contIzq {
-    width: 500px;
-    cursor: pointer;
-    justify-content: space-between;
-}
-
-.contIzq p {
-    color: white
-}
-
-i {
-    margin: 0;
-    font-size: 20px;
-    color: white;
-}
-
-i:hover {
-    color: black;
-}
-
-.contIzq,
-.contIzq div {
-    display: flex;
-    align-items: center;
-}
-
-.lista a:hover {
-    color: rgba(17, 170, 55, 0.85);
-}
-
-.conCont {
-    border: 1px solid rgba(17, 170, 55, 0.85);
-    padding: 10px;
-    border-radius: 10px;
-    padding-left: 30px;
-    transition: all 0.5s;
-    padding-right: 30px;
-    color: rgba(17, 170, 55, 0.85) !important;
-}
-
-.conCont:hover {
-    background-color: rgba(17, 170, 55, 0.85);
-    color: white !important;
-}
-
-.iconosDer {
-    display: flex;
-    width: 100px;
-    margin: 5px;
-    justify-content: space-between;
-}
-
-.banner {
-    width: 100%;
-    height: 900px;
-}
-
-.blueRay {
-    width: 50%;
-    position: relative;
-    height: 0;
-    border-right: 300px solid transparent;
-    border-bottom: 900px solid rgba(0, 139, 169, 0.75);
-}
-
-.banner {
-    background-image: url('./assets/images/banner1.webp');
-    background-size: cover;
-    display: flex;
-}
-
-.greenRay {
-    background-color: rgba(17, 170, 55, 0.45);
-    width: 20px;
-    position: relative;
-    right: 140px;
-    height: 100%;
-    transform: skew(18.5deg);
-}
-
-.centa {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.textContBanner {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    width: 85%;
-    z-index: 4;
-    margin-left: 19%;
-}
-
-.textContBanner h1 {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: 'Khand';
-    font-weight: bolder;
-    font-size: 68px;
-    margin: 0px;
-    line-height: 0.9em;
-}
-
-.buttonContBan {
-    width: 200px;
-    height: 50px;
-    background-color: green;
-    border: none;
-    cursor: pointer;
-}
-
-.buttonContBan a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: 'Khand';
-    font-weight: bolder;
-    font-size: 22px;
-}
-
-.buttonContBan:hover,
-.buttonContBan:hover a {
-    background-color: white;
-    color: green;
-}
-
-.textContBanner p {
-    font-family: Arial, Helvetica, sans-serif;
-    width: 80%;
-    color: white;
-    font-size: 20px;
-}
-
-h1 span {
-    color: rgba(17, 170, 55, 0.85);
-}
-
-.cajaMenuRep {
-    display: none;
+  list-style: none;
 }
 
 /* about */
 #aboutHSE {
-    display: flex;
-    justify-content: center;
-    scroll-margin-top: 100px;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  scroll-margin-top: 100px;
+  align-items: center;
+  flex-direction: column;
 }
 
 .about-us {
-    display: flex;
-    justify-content: space-between;
-    width: 85%;
-    padding-top: 100px;
-    padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .about-us h2 {
-    font-family: 'Khand';
-    font-weight: bolder;
-    font-size: 38px;
-    margin-top: 0px;
-    margin-bottom: 5px;
+  font-family: "Khand";
+  font-weight: bolder;
+  font-size: 38px;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
 
 .about-us p {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    font-family: Arial, Helvetica, sans-serif;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .about-us button {
-    height: 50px;
-    width: 198px;
-    background: none;
-    border: 1px solid rgba(17, 170, 55, 0.85);
-    padding: 10px;
-    border-radius: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    cursor: pointer;
-    color: rgba(17, 170, 55, 0.85);
-    transition: all 0.5s;
+  height: 50px;
+  width: 198px;
+  background: none;
+  border: 1px solid rgba(17, 170, 55, 0.85);
+  padding: 10px;
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  color: rgba(17, 170, 55, 0.85);
+  transition: all 0.5s;
 }
 
 .about-us button:hover {
-    background-color: rgba(17, 170, 55, 0.85);
-    color: white;
+  background-color: rgba(17, 170, 55, 0.85);
+  color: white;
 }
 
 .about-us h2 span {
-    color: rgba(17, 170, 55, 0.85);
+  color: rgba(17, 170, 55, 0.85);
 }
 
 .cajaText {
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .about-us img {
-    width: 35%;
-    object-fit: cover;
+  width: 35%;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .corporative-id {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 100px;
-    background-color: rgba(0, 139, 169, 1);
-    width: 85%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+  background-color: rgba(0, 139, 169, 1);
+  width: 85%;
 }
 
 .contIdent {
-    width: 28%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-    border: 1px solid white;
+  width: 28%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid white;
 }
 
 .contIdent p {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 80%;
-    height: 68%;
-    font-size: 16px;
-    text-align: center;
-}
-
-i {
-    cursor: pointer;
-    transition: all 1s;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80%;
+  height: 68%;
+  font-size: 16px;
+  text-align: center;
 }
 
 #servicesHSE {
-    background-image: url('./assets/images/fondo-Servicios.webp');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
+  background-image: url("./assets/images/fondo-Servicios.webp") !important;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
 }
 
 .contService {
-    position: relative;
-    z-index: 1;
-    margin-bottom: 100px;
-    width: 75%;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 100px;
+  width: 75%;
 }
 
 .contService h2 {
-    font-family: 'Khand';
-    font-weight: bolder;
-    color: white;
-    font-size: 44px;
-    margin-bottom: 0px;
+  font-family: "Khand";
+  font-weight: bolder;
+  color: white;
+  font-size: 44px;
+  margin-bottom: 0px;
 }
 
 .cont-cen-serv {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 138, 169, 0.459);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 138, 169, 0.459);
 }
 
 .menu {
-    background: none !important;
-    display: flex;
-    flex-direction: column;
+  background: none !important;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu ul {
-    justify-content: start;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    border-radius: 2px;
-    width: 80%;
-    overflow: hidden;
+  justify-content: start;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  border-radius: 2px;
+  width: 80%;
+  overflow: hidden;
 }
 
 .menu li {
-    width: 25% !important;
-    position: relative;
+  width: 25% !important;
+  position: relative;
 }
 
 .menu p {
-    background-color: #ffffff;
-    height: 40px;
-    display: flex;
-    padding: 10px 15px;
-    text-decoration: none;
-    text-align: center;
-    align-items: center;
-    color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
-    transition: all 0.5s;
+  background-color: #ffffff;
+  height: 40px;
+  display: flex;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.5s;
 }
 
 .menu .active p {
-    background: #2aac40;
-    color: #fff;
+  background: #2aac40;
+  color: #fff;
 }
 
 .menu .active::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 20px solid #2aac40;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 20px solid #2aac40;
 }
 
 .service {
-    height: 250px;
-    height: 300px;
-    transition: all 1s;
+  height: 250px;
+  height: 300px;
+  transition: all 1s;
 }
 
 .menu ul li {
-    cursor: pointer !important;
+  cursor: pointer !important;
 }
 
 .menu p:hover {
-    background-color: #2aac40;
-    color: white;
+  background-color: #2aac40;
+  color: white;
 }
 
 .service img {
-    width: 100%;
-    position: relative;
-    z-index: 0;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  z-index: 0;
+  height: 100%;
+  object-fit: cover;
 }
 
 .service p {
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-    color: white;
-    z-index: 50;
-    font-weight: 900;
-    font-size: 14px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  color: white;
+  z-index: 50;
+  font-weight: 900;
+  font-size: 14px;
 }
 
 .verdeCParr {
-    transition: all 1s;
-    position: relative;
-    height: 55px;
-    bottom: 19.5%;
-    background-color: rgba(10, 139, 42, 0.65);
+  transition: all 1s;
+  position: relative;
+  height: 55px;
+  bottom: 19.5%;
+  background-color: rgba(10, 139, 42, 0.65);
 }
 
 .contServicios-cards {
-    display: none;
-    width: 80%;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 10px;
+  display: none;
+  width: 80%;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 10px;
 }
 
 .active-cards {
-    display: grid !important;
+  display: grid !important;
 }
 
 .imgCont {
-    position: relative;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    width: 10%;
-    left: 7.5%;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 10%;
+  left: 7.5%;
 }
 
 .img-W {
-    width: 400px;
-    position: relative;
-    z-index: 0;
-    left: 0px;
-    height: 650px;
+  width: 400px;
+  position: relative;
+  z-index: 0;
+  left: 0px;
+  height: 650px;
 }
 
 .descServ {
-    transition: opacity 0.5s ease;
-    height: 0px;
-    opacity: 0;
-    font-size: 14px !important;
+  transition: opacity 0.5s ease;
+  height: 0px;
+  opacity: 0;
+  font-size: 14px !important;
 }
 
 .service:hover .verdeCParr {
-    height: 100%;
-    margin: 0px;
-    bottom: 101.5%;
+  height: 100%;
+  margin: 0px;
+  border-radius: 10px;
+  bottom: 101.5%;
 }
 
 .service:hover .descServ {
-    opacity: 12;
-    transition-delay: 0.5s;
-    height: 100%;
+  opacity: 12;
+  transition-delay: 0.5s;
+  height: 100%;
 }
 
 .message {
-    height: 30%;
+  height: 30%;
 }
 
 #faqsHSE {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .PqC {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    width: 85%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 85%;
 }
 
 .PqC img {
-    width: 100%;
-    object-fit: cover;
-    height: 450px;
+  width: 100%;
+  object-fit: cover;
+  height: 450px;
+  border-radius: 10px;
 }
 
 .PR {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .pregText {
-    width: 100%;
+  width: 100%;
 }
 
 .pregText h2 {
-    font-family: 'Khand';
-    color: rgba(0, 139, 169, 1);
-    font-size: 40px;
+  font-family: "Khand";
+  color: rgba(0, 139, 169, 1);
+  font-size: 40px;
 }
 
 .pregContainer {
-    display: flex;
+  display: flex;
 }
 
 .PR img {
-    height: 110px;
-    width: 110px;
+  height: 110px;
+  width: 110px;
 }
 
 .PR div {
-    padding: 20px;
+  padding: 20px;
 }
 
 .pregunta {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
 
 .respuesta {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container1,
 .container2 {
-    width: 50%;
+  width: 50%;
 }
 
 #contactHSE {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-attachment: fixed;
-    background-image: url('./assets/images/imgFondo-cont.png');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  background-image: url("./assets/images/imgFondo-cont.png") !important;
 }
 
 .centCont {
-    width: 85%;
+  width: 85%;
 }
 
 .formulario {
-    display: flex;
-    background-color: white;
-    height: 500px;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    align-items: center;
+  border-radius: 10px;
+  display: flex;
+  background-color: white;
+  height: 500px;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
 }
 
 .formulario img {
-    width: 40%;
-    height: 100%;
-    object-fit: cover;
+  width: 40%;
+  border-radius: 0px 10px 10px 0px;
+  height: 100%;
+  object-fit: cover;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    height: 100% !important;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100% !important;
+  margin: auto;
 }
 
-input[type='submit'] {
-    width: 200px !important;
-    height: 50px;
-    background-color: #2aac40;
-    color: white;
-    border: 0;
-    cursor: pointer;
-    transition: all 0.6s;
+input[type="submit"] {
+  width: 200px !important;
+  height: 50px;
+  background-color: #2aac40;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.6s;
 }
 
-input[type='submit']:hover {
-    background-color: white;
-    color: #2aac40;
-    border: 1px solid #2aac40;
+input[type="submit"]:hover {
+  background-color: white;
+  color: #2aac40;
+  border: 1px solid #2aac40;
 }
 
 input {
-    width: 100%;
-    height: 50px;
-    margin: 10px;
-    border: 1px solid #2aac40;
-    background: none;
+  width: 100%;
+  height: 50px;
+  margin: 10px;
+  border: 1px solid #2aac40;
+  background: none;
 }
 
 input::placeholder {
-    padding-left: 10px;
-    font-family: 'Khand';
-    font-size: 18px;
-    color: black;
+  padding-left: 10px;
+  font-family: "Khand";
+  font-size: 18px;
+  color: black;
 }
 
 .centFooter {
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .centFooter ul {
-    padding: 0px;
+  padding: 0px;
 }
 
 .centFooter a {
-    color: white;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .centFooter h3 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 3px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 3px;
 }
 
 .centFooter li {
-    padding: 3px;
+  padding: 3px;
 }
 
 .credits p {
-    width: 200px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .hip {
-    display: flex;
-    width: 60%;
-    justify-content: space-between;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 20px solid #2aac4091;
-    background-color: rgba(0, 139, 169, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 20px solid #2aac4091;
+  background-color: rgba(0, 139, 169, 1);
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+}
+
+.blueRay {
+  width: 50%;
+  position: relative;
+  height: 0;
+  border-right: 300px solid transparent;
+  border-bottom: 100vh solid rgba(0, 139, 169, 0.75);
+}
+
+.banner {
+  background-image: url("./assets/images/banner1.webp") !important;
+  background-size: cover;
+  display: flex;
+}
+
+.greenRay {
+  background-color: rgba(17, 170, 55, 0.45);
+  width: 20px;
+  position: relative;
+  right: 140px;
+  height: 100%;
+  transform: skew(18.5deg);
+}
+
+.centa {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.textContBanner {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 85%;
+  z-index: 4;
+  margin-left: 19%;
+}
+
+.textContBanner h1 {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Khand";
+  font-weight: 900;
+  font-size: 68px;
+  margin: 0px;
+  line-height: 0.9em;
+}
+
+.buttonContBan {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.buttonContBan a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Khand";
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.buttonContBan:hover {
+  background-color: white;
+  color: green;
+}
+.buttonContBan:hover a {
+  color: green;
+}
+.textContBanner p {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80%;
+  color: white;
+  font-size: 20px;
+}
+
+h1 span {
+  color: rgba(17, 170, 55, 0.85);
+}
+
+@media (max-width: 1180px) {
+  .imgCont {
+    display: none !important;
+  }
+
+  .contService {
+    width: 85%;
+  }
+
+  .menu ul {
+    width: 100% !important;
+  }
+
+  .contServicios-cards {
     width: 100%;
+  }
 }
 
-@media(max-width:1180px) {
-    .imgCont {
-        display: none !important;
-    }
+@media (max-width: 1054px) {
+  .corporative-id {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
 
-    .contService {
-        width: 85%;
-    }
+  .contIdent {
+    width: 85%;
+    margin: 15px;
+  }
 
-    .menu ul {
-        width: 100% !important;
-    }
+  .pregContainer {
+    display: block;
+  }
 
-    .contServicios-cards {
-        width: 100%;
-    }
+  .container1,
+  .container2 {
+    width: 100% !important;
+  }
+
+  .hip {
+    flex-direction: column;
+  }
 }
 
-@media(max-width:1054px) {
-    .corporative-id {
-        flex-direction: column;
-        height: 100%;
-        align-items: center;
-    }
+@media (max-width: 668px) {
+  .blueRay {
+    width: 70%;
+    border-right: 100px solid transparent;
+  }
 
-    .contIdent {
-        width: 85%;
-        margin: 15px;
-    }
+  .textContBanner {
+    margin-left: 10%;
+  }
 
-    .pregContainer {
-        display: block;
-    }
+  .greenRay {
+    right: 40px;
+    transform: skew(6.45deg);
+  }
 
-    .container1,
-    .container2 {
-        width: 100% !important;
-    }
+  .about-us {
+    flex-direction: column-reverse;
+    padding: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 
-    .hip {
-        flex-direction: column;
-    }
+  .about-us img {
+    width: 100%;
+  }
+
+  .cajaText {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .menu {
+    overflow-x: auto;
+  }
+
+  .menu ul {
+    width: 600px !important;
+  }
+
+  .formulario img {
+    display: none;
+  }
+
+  .formulario {
+    justify-content: center;
+  }
+
+  form {
+    width: 85%;
+    margin: 0px;
+  }
+
+  form input {
+    margin: 0px;
+    margin-top: 10px;
+  }
 }
 
-@media(max-width:783px) {
-    .lista {
-        display: none;
-    }
+@media (max-width: 500px) {
+  .PR img {
+    width: 80px;
+    height: 80px;
+  }
 
-    .cajaMenuRep {
-        display: block;
-    }
+  .textContBanner h1 {
+    font-size: 48px;
+    width: 100%;
+  }
 
-    .BarraN {
-        display: none;
-    }
+  .textContBanner p {
+    width: 100%;
+    font-size: 18px;
+  }
 
-    .checkbtnRep {
-        color: black !important;
-        float: right;
-        line-height: 80px;
-        margin-right: 5%;
-        cursor: pointer;
-    }
+  .centFooter {
+    flex-direction: column;
+  }
 
-    li {
-        opacity: 100%;
-    }
+  .hip {
+    width: 100%;
+  }
 
-    .logoRep {
-        width: 70px;
-        height: 70px;
-        margin-left: 20%;
-    }
+  .credits {
+    width: 100%;
+  }
 
-    #ulREP {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        flex-direction: column;
-        background-color: rgba(17, 170, 55, 0.85);
-        margin: 0;
-        padding: 0;
-        top: 80px;
-        z-index: 999;
-        margin-top: 0;
-        justify-content: start;
-        margin-left: 0;
-        margin-right: 0%;
-        left: -100%;
-        text-align: center;
-        transition: all 1.7s;
-        right: -100%;
-    }
-
-    #abrir {
-        font-size: 25px;
-        color: black;
-    }
-
-    .cajaMenuRep {
-        z-index: 999;
-        background: none;
-        display: flex;
-        position: fixed;
-        justify-content: end;
-        align-items: center;
-        height: 80px;
-        width: 85%;
-    }
-
-    .cajaMenuRep ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-
-    .cajaMenuRep ul li a {
-        text-decoration: none;
-        color: white;
-        font-size: 24px;
-        font-family: 'Khand';
-        font-weight: 900;
-    }
-
-    .cajaMenuRep ul li a:hover {
-        color: rgba(0, 139, 169, 1);
-    }
-
-    li a:hover,
-    li a.active {
-        background: none;
-        color: black;
-    }
-
-    #checkMenRep {
-        display: none;
-    }
-
-    #checkMenRep:checked ~ #ulREP {
-        left: 0;
-    }
-
-    .sacarMenuRep {
-        left: -100% !important;
-    }
+  .credits p {
+    width: 100%;
+  }
 }
 
-@media(max-width:668px) {
-    .blueRay {
-        width: 70%;
-        border-right: 100px solid transparent;
-    }
+@media (max-width: 400px) {
+  .blueRay {
+    width: 100%;
+    border-right: 0px solid transparent;
+    border-bottom: 100vh solid rgba(0, 139, 169, 0.75);
+  }
 
-    .textContBanner {
-        margin-left: 10%;
-    }
+  .banner {
+    height: 100vh;
+  }
 
-    .greenRay {
-        right: 40px;
-        transform: skew(6.45deg);
-    }
+  .greenRay {
+    display: none;
+  }
 
-    .about-us {
-        flex-direction: column-reverse;
-        padding: 0px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
+  .textContBanner {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin-left: 5%;
+  }
 
-    .about-us img {
-        width: 100%;
-    }
-
-    .cajaText {
-        margin-bottom: 30px;
-        width: 100%;
-    }
-
-    .menu {
-        overflow-x: auto;
-    }
-
-    .menu ul {
-        width: 600px !important;
-    }
-
-    .formulario img {
-        display: none;
-    }
-
-    .formulario {
-        justify-content: center;
-    }
-
-    form {
-        width: 85%;
-        margin: 0px;
-    }
-
-    form input {
-        margin: 0px;
-        margin-top: 10px;
-    }
-}
-
-@media(max-width:500px) {
-    .contIzq p {
-        display: none;
-    }
-
-    .PR img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .textContBanner h1 {
-        font-size: 48px;
-        width: 100%;
-    }
-
-    .textContBanner p {
-        width: 100%;
-        font-size: 18px;
-    }
-
-    .contIzq {
-        width: 70px;
-    }
-
-    .centFooter {
-        flex-direction: column;
-    }
-
-    .hip {
-        width: 100%;
-    }
-
-    .credits {
-        width: 100%;
-    }
-
-    .credits p {
-        width: 100%;
-    }
-}
-
-@media(max-width:400px) {
-    .blueRay {
-        width: 100%;
-        border-right: 0px solid transparent;
-        border-bottom: 100vh solid rgba(0, 139, 169, 0.75);
-    }
-
-    .banner {
-        height: 100vh;
-    }
-
-    .greenRay {
-        display: none;
-    }
-
-    .textContBanner {
-        top: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100vh;
-        margin-left: 5%;
-    }
-
-    .contServicios-cards {
-        width: 100%;
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-        gap: 10px;
-    }
+  .contServicios-cards {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    gap: 10px;
+  }
 }

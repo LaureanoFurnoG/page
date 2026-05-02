@@ -5,11 +5,11 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { useEffect } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import MRO from './pages/MRO/MRO';
 function App() {
   useEffect(() => {
     AOS.init({
-      once: false,
-      duration: 800,
+      
     });
   }, []);
   return (
@@ -18,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage/>}/>
           <Route path='/hse' element={<HSE/>}/>
+          <Route path='/mro' element={<MRO/>}/>
       </Routes>
     </BrowserRouter>
     </>

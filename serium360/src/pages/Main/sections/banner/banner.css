@@ -9,6 +9,7 @@ h1 {
   font-family: "Khand";
   font-weight: bolder;
   font-size: 68px;
+  width: 80%;
   margin: 0px;
   line-height: 0.9em;
 }
@@ -24,7 +25,7 @@ h1 {
   transition: clip-path 2s;
   height: 950px;
   clip-path: polygon(0 0, 60% 0, 55% 100%, 0% 100%);
-  border-bottom: 1px solid #39C15C;
+  border-bottom: 1px solid #39c15c;
 }
 .texts-Bann {
   width: 50%;
@@ -61,6 +62,9 @@ h1 {
 @media (max-width: 803px) {
   .bann-container {
     clip-path: none;
+  }
+  .banner-t h1 {
+    width: 100%;
   }
   .ed-rasc {
     right: 0%;

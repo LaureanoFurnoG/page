@@ -1,0 +1,52 @@
+.bannerMRO {
+  width: 100%;
+  background-image: url("../../assets/images/bannerMRO.png");
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+}
+
+.color-textConainer {
+  background: #2e9f4b;
+  background: linear-gradient(
+    83deg,
+    rgba(46, 159, 75, 1) 0%,
+    rgba(46, 159, 75, 0) 99%
+  );
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.optColor {
+  color: #0091b1;
+}
+.space-textCon {
+  margin-left: 11%;
+}
+.space-textCon h1, .space-textCon p{
+  color: white;
+}
+
+.btn-ColorMRO {
+  background-color: #0091b1;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 180px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 8px;
+}
+.btn-ColorMRO:hover {
+  background-color: #036277;
+}
+
+.space-textCon p{
+  font-size: 20px;
+}
+@media(max-width:500px){
+  .space-textCon h1{
+    font-size: 48px;
+  }
+}
