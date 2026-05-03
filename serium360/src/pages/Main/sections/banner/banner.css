@@ -15,8 +15,10 @@ h1 {
 }
 .banner-t {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
+  overflow: hidden; 
 }
 .bann-container {
   width: 100%;
@@ -42,7 +44,7 @@ h1 {
   width: 85%;
 }
 .banner-t {
-  background-image: url(../../../../assets/bannEdif.png) !important;
+  background-image: url(../../../../assets/bannEdif.webp) !important;
   background-position-x: right;
   background-position-y: center;
   background-repeat: no-repeat;
@@ -53,6 +55,9 @@ h1 {
   position: absolute;
   right: 34%;
   top: 105px;
+}
+.texts-Bann p{
+  font-size: 20px;
 }
 @media (max-width: 1432px) {
   .ed-rasc {

@@ -1,9 +1,9 @@
 import './about.css'
 import CardsAbout from '../../../../components/CardsAbout/CardsAbout'
-import Mision from '../../assets/about-images/mision.png'
-import Vision from '../../assets/about-images/vision.png'
-import Values from '../../assets/about-images/values.png'
-import image from '../../assets/about-images/image.png'
+import Mision from '../../assets/about-images/mision.webp'
+import Vision from '../../assets/about-images/vision.webp'
+import Values from '../../assets/about-images/values.webp'
+import image from '../../assets/about-images/image.webp'
 function About() {
 
   return (
@@ -17,9 +17,9 @@ function About() {
               <p>Trabajamos junto a nuestros clientes para identificar riesgos, optimizar procesos y garantizar el cumplimiento de normativas. Entendemos que cada operación es única, por lo que adaptamos nuestras soluciones a cada contexto.</p>
               <p>Nos comprometemos con la calidad, la eficiencia y la seguridad en cada proyecto. Buscamos generar relaciones a largo plazo basadas en la confianza y resultados concretos.</p>
               <div className='m-v-v'>
-                <CardsAbout timeAOS={1000} title={'MISIÓN'} icon={Mision} text={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make "} />
-                <CardsAbout timeAOS={1500} title={'VISIÓN'} icon={Vision} text={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make "} />
-                <CardsAbout timeAOS={2000} title={'VALORES'} icon={Values} text={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make "} />
+                <CardsAbout timeAOS={1000} title={'MISIÓN'} icon={Mision} text={"Brindar servicios de MRO y HSE que aseguren la continuidad operativa de nuestros clientes, reduciendo riesgos, costos y tiempos de inactividad mediante soluciones técnicas eficientes, medibles y adaptadas a cada operación."} />
+                <CardsAbout timeAOS={1500} title={'VISIÓN'} icon={Vision} text={"Ser una empresa referente en MRO y HSE en la región, reconocida por su capacidad de prevenir incidentes, optimizar activos y aportar valor real al negocio de nuestros clientes, más allá del cumplimiento normativo."} />
+                <CardsAbout timeAOS={2000} title={'VALORES'} icon={Values} text={"Priorizamos la seguridad, trabajamos con eficiencia basada en datos, actuamos con transparencia y adaptamos cada solución al contexto del cliente, con responsabilidad ambiental."} />
               </div>
               <button className='btn-Color' onClick={() => location.href='#contactMain'}>CONTACTAR</button>
             </div>

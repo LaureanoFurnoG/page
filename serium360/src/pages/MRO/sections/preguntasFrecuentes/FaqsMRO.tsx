@@ -12,38 +12,36 @@ const PreguntasFrecuentes: React.FC = () => {
             <div data-aos="fade-right" data-aos-duration="1000" className="PR">
               <img src={pregIcon} alt="" />
               <div>
-                <p className="pregunta">¿Qué servicios ofrece Serium 360 HSE Consulting?</p>
+                <p className="pregunta">¿Qué servicios incluye el MRO (Maintenance, Repair and Operations)?</p>
                 <p className="respuesta">
-                  Ofrecemos consultoría en higiene, seguridad y medio ambiente,
-                  incluyendo auditorías, evaluaciones de riesgos, capacitaciones y gestión de protocolos normativos como
-                  mediciones de iluminación, impacto acústico, carga térmica, ergonomía y más.
+                  Incluimos mantenimiento preventivo y correctivo, reparaciones técnicas, gestión de repuestos, inspecciones periódicas y soporte operativo para garantizar la continuidad y eficiencia de los equipos e instalaciones.
                 </p>
               </div>
             </div>
             <div data-aos="fade-right" data-aos-duration="1500" className="PR">
               <img src={pregIcon} alt="" />
               <div>
-                <p className="pregunta">¿Trabajan con empresas de cualquier tamaño?</p>
+                <p className="pregunta">¿Qué tipo de equipos o instalaciones cubren?</p>
                 <p className="respuesta">
-                  Sí. En Serium 360 HSE Consulting, todos los clientes son igual de importantes, sin importar si se trata de una PyME, una industria o una gran empresa. Nos adaptamos a las necesidades de cada organización.
+                  Trabajamos con equipos industriales, sistemas eléctricos, climatización, infraestructura edilicia y otros activos críticos, adaptándonos a las necesidades específicas de cada operación.
                 </p>
               </div>
             </div>
             <div data-aos="fade-right" data-aos-duration="2000" className="PR">
               <img src={pregIcon} alt="" />
               <div>
-                <p className="pregunta">¿Por qué es importante cumplir con la normativa en seguridad e higiene?</p>
+                <p className="pregunta">¿Ofrecen mantenimiento preventivo además de reparaciones?</p>
                 <p className="respuesta">
-                  El cumplimiento normativo no solo evita sanciones legales, sino que también protege la salud de los trabajadores, reduce riesgos laborales y mejora la eficiencia operativa.
+                  Sí. Implementamos planes de mantenimiento preventivo diseñados para reducir fallas, minimizar tiempos de inactividad y extender la vida útil de los equipos.
                 </p>
               </div>
             </div>
             <div data-aos="fade-right" data-aos-duration="2500" className="PR">
               <img src={pregIcon} alt="" />
               <div>
-                <p className="pregunta">¿Qué normativas cumplen los estudios y mediciones que realizan?</p>
+                <p className="pregunta">¿Cuál es el tiempo de respuesta ante una falla?</p>
                 <p className="respuesta">
-                  Nuestros servicios se ajustan a la legislación vigente en Argentina, incluyendo normativas de la Superintendencia de Riesgos del Trabajo (SRT), Resoluciones del Ministerio de Trabajo, la Ley 19.587 de Higiene y Seguridad en el Trabajo y estándares ISO.
+                  Contamos con protocolos de atención que priorizan incidencias críticas, brindando respuestas rápidas para reducir el impacto operativo y garantizar la continuidad del servicio.
                 </p>
               </div>
             </div>
@@ -53,36 +51,36 @@ const PreguntasFrecuentes: React.FC = () => {
             <div data-aos="fade-left" data-aos-duration="1000" className="PR">
               <img src={pregIcon} alt="" />
               <div>
-                <p className="pregunta">¿En qué zonas brindan sus servicios?</p>
+                <p className="pregunta">¿Trabajan con empresas de distintos tamaños?</p>
                 <p className="respuesta">
-                  Nuestra sede está en Buenos Aires, Argentina, pero trabajamos en todo el territorio nacional, brindando asesoramiento y soluciones a empresas de diversas provincias.
+                  Sí. Brindamos servicios tanto a pequeñas y medianas empresas como a operaciones industriales de mayor escala, adaptando nuestros procesos a cada contexto.
                 </p>
               </div>
             </div>
             <div data-aos="fade-left" data-aos-duration="1500" className="PR">
               <img src={pregIcon} alt="" />
               <div>
-                <p className="pregunta">¿Cómo se realizan las mediciones de impacto acústico, iluminación o carga térmica?</p>
+                <p className="pregunta">¿Cómo gestionan los repuestos y consumibles?</p>
                 <p className="respuesta">
-                  Utilizamos equipos certificados y metodologías aprobadas por la normativa vigente para realizar mediciones ambientales en el ámbito laboral, garantizando resultados precisos y auditables.
+                  Ofrecemos gestión integral de repuestos MRO, asegurando disponibilidad, trazabilidad y optimización de inventarios para evitar interrupciones en la operación.
                 </p>
               </div>
             </div>
             <div data-aos="fade-left" data-aos-duration="2000" className="PR">
               <img src={pregIcon} alt="" />
               <div>
-                <p className="pregunta">¿Ofrecen capacitaciones para empresas?</p>
+                <p className="pregunta">¿Cumplen con normativas y estándares técnicos?</p>
                 <p className="respuesta">
-                  Sí. Brindamos capacitaciones en seguridad e higiene laboral, manejo de emergencias, brigadas de incendios, ergonomía, manipulación de sustancias peligrosas y cursos habilitantes según la Resolución SRT 960/15.
+                  Nuestros procesos se alinean con normativas vigentes y buenas prácticas de mantenimiento, garantizando seguridad, confiabilidad y cumplimiento operativo.
                 </p>
               </div>
             </div>
             <div data-aos="fade-left" data-aos-duration="2500" className="PR">
               <img src={pregIcon} alt="" />
               <div>
-                <p className="pregunta">¿Cómo puedo solicitar un servicio o presupuesto?</p>
+                <p className="pregunta">¿Cómo puedo solicitar un servicio o plan de mantenimiento?</p>
                 <p className="respuesta">
-                  Puedes contactarnos a través de nuestro sitio web, correo electrónico o teléfono. Nuestro equipo te asesorará y ofrecerá una solución adaptada a las necesidades de tu empresa.
+                  Podés contactarnos a través de nuestros canales para evaluar tus necesidades y diseñar una solución MRO ajustada a tu operación.
                 </p>
               </div>
             </div>

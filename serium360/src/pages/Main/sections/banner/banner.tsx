@@ -1,6 +1,6 @@
 import './banner.css'
 import Header from '../../../../components/Navbar/Navbar'
-import imageEd from '../../../../assets/rasc.png'
+import imageEd from '../../../../assets/rasc.webp'
 function Banner() {
 
   return (

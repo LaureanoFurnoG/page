@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutImg from '../../assets/images/services/lav.png';
+import aboutImg from '../../assets/images/services/lav.webp';
 import './About.css'
 const About: React.FC = () => {
   return (

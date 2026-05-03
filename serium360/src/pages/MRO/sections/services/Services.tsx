@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import EmblaCarousel from '../../components/carrusel/EmblaCarousel';
 import ServiceData from '../../components/serviceData/serviceData';
 import './style.css'
-import air from '../../assets/images/services/air.png'
-import hid from '../../assets/images/services/hid.png'
-import lav from '../../assets/images/services/lav.png'
-import paint from '../../assets/images/services/paint.png'
+import air from '../../assets/images/services/air.webp'
+import hid from '../../assets/images/services/hid.webp'
+import lav from '../../assets/images/services/lav.webp'
+import paint from '../../assets/images/services/paint.webp'
 
 type service ={
     Title: string,
@@ -16,8 +16,8 @@ type service ={
 const Services: React.FC = () => {
   const services = [
     {
-      Title: "INSTALACIÓN Y MANTENIMIENTO DE GENERADORES RENOVABLES",
-      Desc: "Cumpliendo normativas, garantizando seguridad y protegiendo el medioambiente con responsabilidad y compromiso legal.",
+      Title: "INSTALACIÓN Y MANTENIMIENTO DE SISTEMAS DE AIRE ACONDICIONADO",
+      Desc: "Montaje, diagnóstico y mantenimiento de equipos de climatización, optimizando su rendimiento, eficiencia energética y vida útil.",
       Image: air
     },
     {
@@ -26,13 +26,13 @@ const Services: React.FC = () => {
       Image: hid
     },
     {
-      Title: "INSTALACIÓN Y MANTENIMIENTO DE GENERADORES RENOVABLES",
-      Desc: "Cumpliendo normativas, garantizando seguridad y protegiendo el medioambiente con responsabilidad y compromiso legal.",
+      Title: "SERVICIOS DE LIMPIEZA TÉCNICA Y LAVADO A PRESIÓN",
+      Desc: "Limpieza profesional de superficies mediante equipos de alta presión, garantizando la eliminación eficaz de suciedad, residuos y agentes contaminantes.",
       Image: lav
     },
     {
-      Title: "INSTALACIÓN Y MANTENIMIENTO DE GENERADORES RENOVABLES",
-      Desc: "Cumpliendo normativas, garantizando seguridad y protegiendo el medioambiente con responsabilidad y compromiso legal.",
+      Title: "SERVICIOS PROFESIONALES DE PINTURA",
+      Desc: "Aplicación de recubrimientos en interiores y exteriores, con terminaciones duraderas, uniformes y adaptadas a cada tipo de superficie.",
       Image: paint
     }
   ]

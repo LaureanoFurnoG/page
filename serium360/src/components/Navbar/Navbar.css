@@ -97,6 +97,10 @@ i:hover {
   color: rgba(17, 170, 55, 0.85);
 }
 
+.ant-dropdown-trigger *{
+  cursor: pointer !important;
+}
+
 .conCont {
   border: 1px solid rgba(17, 170, 55, 0.85);
   padding: 10px;

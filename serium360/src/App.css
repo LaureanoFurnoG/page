@@ -6,3 +6,18 @@ p {
 body, html {
   overflow-x: hidden !important;
 }
+
+.swal2-container{
+  padding: 0px !important;
+}
+
+.swal2-container h2{
+  font-family: "Khand";
+}
+
+.swal2-container .swal2-html-container{
+  font-family: "inter", sans-serif;
+}
+.swal2-shown{
+  padding: 0px !important;
+}
