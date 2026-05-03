@@ -7,21 +7,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import MRO from './pages/MRO/MRO';
 function App() {
-useEffect(() => {
-  AOS.init({
-    duration: 800,
-    once: true,
-  });
-
-  window.addEventListener('load', () => {
-    const navbar = document.querySelector('.cajaMenu') as HTMLElement;
-    if (navbar) {
-      navbar.style.display = 'none';
-      navbar.offsetHeight;
-      navbar.style.display = '';
-    }
-  });
-}, []);
+  useEffect(() => {
+    AOS.init({
+      disableMutationObserver: false,
+      once: true,
+    });
+  }, []);
   return (
     <>
     <BrowserRouter basename="/">
