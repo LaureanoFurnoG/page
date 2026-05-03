@@ -5,14 +5,22 @@ import { PrevButton, NextButton } from './EmblaCarouselArrowButtons'
 import useEmblaCarousel from 'embla-carousel-react'
 import type { EmblaOptionsType } from 'embla-carousel' 
 import './css/embla.css'
-import './css/base.css'
+import * as motion from "motion/react-client"
+
+type service ={
+    Title: string,
+    Desc: string,
+    Image: string,
+}
+
 type PropType = {
-  slides: number[]
+  slides: service[]
   options?: EmblaOptionsType
+  setSelectService: (value: service) => void
 }
 
 const EmblaCarousel = (props: PropType) => {
-  const { slides, options } = props
+  const { slides, options, setSelectService } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
@@ -26,15 +34,28 @@ const EmblaCarousel = (props: PropType) => {
   } = usePrevNextButtons(emblaApi)
 
   return (
-    <div className="embla">
+    <div className="embla" data-aos="fade-left">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
-            <div className="embla__slide" key={index}>
-              <div className="embla__slide__number">
-                <span>{index + 1}</span>
-              </div>
-            </div>
+          {slides.map((serv) => (
+            <motion.div onClick={() => setSelectService(serv)}
+            style={{backgroundImage: `URL(${serv.Image}`}}
+            className="embla__slide"
+            whileHover={{
+                scale: [null, 1.1],
+                transition: {
+                    duration: 0.5,
+                    times: [0, 0.6, 1],
+                    ease: ["easeInOut", "easeOut"],
+                },
+            }}
+            whileTap={{ scale: 0.8 }}
+            transition={{
+                duration: 0.3,
+                ease: "easeOut",
+            }}
+            >
+            </motion.div>
           ))}
         </div>
       </div>

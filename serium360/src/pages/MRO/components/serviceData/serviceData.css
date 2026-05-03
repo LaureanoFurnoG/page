@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Khand";
+  src: url("../../assets/fonts/Khand-Regular.ttf");
+}
+.service-text-part {
+  width: 60%;
+}
+.service-text-part h2 {
+  text-decoration: none;
+  color: white;
+  font-family: "Khand";
+  font-size: 38px;
+  margin: 0px;
+}
+
+.service-text-part p {
+  color: white;
+}
+
+@media (max-width: 671px) {
+  .service-text-part {
+    width: 100%;
+  }
+  .service-text-part h2 {
+    font-size: 30px;
+  }
+}

@@ -136,9 +136,12 @@ ul {
   margin-bottom: 0px;
 }
 
-.cont-cen-serv {
+.cont-cen-serv, .cont-cen-servMRO {
   width: 100%;
   display: flex;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  position: relative;
   justify-content: center;
   background-color: rgba(0, 138, 169, 0.459);
 }

@@ -32,8 +32,10 @@ nav {
   box-shadow: 10px 4px 5px rgba(0, 0, 0, 0.253);
 }
 
-.contBanNav img{
-    cursor: pointer;
+.contBanNav img {
+  position: relative;
+  z-index: 9999;
+  cursor: pointer;
 }
 
 nav,
@@ -44,9 +46,11 @@ nav,
 }
 
 .cajaMenu {
-  width: 100%;
-  position: fixed;
+  width: 100vw;
+  position: fixed !important;
+  min-height: 80px;
   z-index: 30;
+  left: 0;
 }
 
 .contBanNav {
@@ -102,9 +106,7 @@ i:hover {
   padding-right: 30px;
   color: rgba(17, 170, 55, 0.85) !important;
 }
-.ant-dropdown-trigger *{
-    cursor: pointer !important;
-}
+
 .conCont:hover {
   background-color: rgba(17, 170, 55, 0.85);
   color: white !important;
@@ -155,7 +157,7 @@ i:hover {
 
   #ulREP {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     flex-direction: column;
     background-color: rgba(17, 170, 55, 0.85);
@@ -167,10 +169,10 @@ i:hover {
     justify-content: start;
     margin-left: 0;
     margin-right: 0%;
-    left: -100%;
+    left: -100vw;
     text-align: center;
-    transition: all 1.7s;
-    right: -100%;
+    transition: left 0.4s ease;
+    right: unset;
   }
 
   #abrir {
@@ -222,7 +224,7 @@ i:hover {
   }
 
   .sacarMenuRep {
-    left: -100% !important;
+    left: -100vw !important;
   }
 }
 

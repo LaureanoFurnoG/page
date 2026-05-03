@@ -1,0 +1,22 @@
+.cent-C-S {
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  align-items: start;
+  padding-top: 60px;
+}
+
+.cont-cen-servMRO{
+    height: 870px;
+}
+@media(max-width: 600px){
+    .cont-cen-servMRO{
+        height: 575px;
+    }
+    .cent-C-S{
+        padding-top: 30px;
+    }
+    .cont-cen-servMRO{
+        background-position: center !important;
+    }
+}

@@ -7,14 +7,24 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import MRO from './pages/MRO/MRO';
 function App() {
-  useEffect(() => {
-    AOS.init({
-      
-    });
-  }, []);
+useEffect(() => {
+  AOS.init({
+    duration: 800,
+    once: true,
+  });
+
+  window.addEventListener('load', () => {
+    const navbar = document.querySelector('.cajaMenu') as HTMLElement;
+    if (navbar) {
+      navbar.style.display = 'none';
+      navbar.offsetHeight;
+      navbar.style.display = '';
+    }
+  });
+}, []);
   return (
     <>
-    <BrowserRouter basename="/page/">
+    <BrowserRouter basename="/">
       <Routes>
         <Route path="/" element={<MainPage/>}/>
           <Route path='/hse' element={<HSE/>}/>
